@@ -10,8 +10,9 @@ export default function UserForm(props) {
           type="text"
           placeholder="UserName"
           name="user"
+          required
         />
-        <button className="sbtn">Submit</button>
+        <button className="sbtn">Search</button>
       </form>
     </div>
   );

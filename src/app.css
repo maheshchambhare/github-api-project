@@ -15,12 +15,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
-.heading {
+.container .heading {
   font-family: "Montserrat", sans-serif;
-  font-size: 48px;
+  font-size: 38px;
   width: 100%;
   height: 100px;
   display: -webkit-box;
@@ -34,12 +41,12 @@
           align-items: center;
 }
 
-.form {
+.container .form {
   width: 100%;
   background-color: #e4e4e4;
 }
 
-.form .form-container {
+.container .form .form-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,7 +66,7 @@
   margin-right: auto;
 }
 
-.form .form-container .input {
+.container .form .form-container .input {
   padding: 5px;
   margin: 30px;
   width: 30vw;
@@ -67,7 +74,7 @@
   border-radius: 10px;
 }
 
-.form .form-container .sbtn {
+.container .form .form-container .sbtn {
   color: #fff;
   padding: 5px 20px;
   border: none;
@@ -76,7 +83,7 @@
   cursor: pointer;
 }
 
-.main-container {
+.container .main-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,7 +94,7 @@
           flex-direction: column;
 }
 
-.main-container .avatar {
+.container .main-container .avatar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +104,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 5px solid #fff;
+  border: 5px solid rgba(255, 255, 255, 0.527);
   border-radius: 50%;
   width: 50vw;
   max-width: 400px;
@@ -108,7 +115,7 @@
   margin-right: auto;
 }
 
-.main-container .info {
+.container .main-container .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,39 +126,34 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 30vw;
+  min-width: 300px;
+  min-height: 450px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px #13131370;
-          box-shadow: 0 0 10px #13131370;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 10px #1313132c;
+          box-shadow: 0 0 10px #1313132c;
   margin-bottom: 100px;
 }
 
-@media (max-width: 1200px) {
-  .main-container .info {
-    width: 80%;
-  }
-}
-
-.main-container .info h1 {
+.container .main-container .info h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   padding: 10px;
 }
 
 @media (min-width: 360px) {
-  .main-container .info h1 {
+  .container .main-container .info h1 {
     font-size: 20px;
   }
 }
 
-.main-container .info .name {
+.container .main-container .info .name {
   font-size: 15px;
 }
 
-.main-container .info .pr {
+.container .main-container .info .pr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,25 +164,48 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px;
   border: none;
   border-radius: 10px;
   margin: 10px;
-  max-width: 200px;
+  min-width: 300px;
+  -webkit-box-shadow: 0 0 15px #77777710;
+          box-shadow: 0 0 15px #77777710;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
-.main-container .info p {
+.container .main-container .info .pr:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  background-color: #ff8d8d;
+}
+
+.container .main-container .info p {
   padding: 10px;
   max-width: 300px;
 }
 
-.main-container .info .Follow {
+.container .main-container .info .Follow {
   border: none;
   border-radius: 10px;
   padding: 10px 20px;
   cursor: pointer;
-  background-color: #c35656;
+  background-color: #ff8d8d;
   margin-top: 20px;
   width: 100%;
+  -webkit-box-shadow: 0 0 10px #7777773a;
+          box-shadow: 0 0 10px #7777773a;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.container .main-container .info .Follow:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 /*# sourceMappingURL=app.css.map */

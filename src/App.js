@@ -17,6 +17,7 @@ export default class App extends Component {
     followers: null,
     repoName: null,
     Name: null,
+    error: null,
   };
 
   getUser = (e) => {
@@ -60,17 +61,27 @@ export default class App extends Component {
 
               <p>Bio : {this.state.bio}</p>
               <button className="pr">
-                Public Repos {this.state.public_repos}
+                Public Repository : {this.state.public_repos}
               </button>
               <button className="pr">Followers {this.state.followers}</button>
-              <button className="pr">following {this.state.following}</button>
-              <a href={this.state.html_url}>
+              <button className="pr">Following {this.state.following}</button>
+
+              <a href={this.state.html_url} target="_blank">
                 <button className="Follow">follow</button>
               </a>
             </section>
           </div>
         ) : (
-          <p>please enter name</p>
+          <div
+            style={{
+              height: "100px",
+              justifyContent: "center",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <p>Please Enter UserName</p>
+          </div>
         )}
       </div>
     );
