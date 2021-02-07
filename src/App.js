@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import UserForm from "./components/UserForm";
 import axios from "axios";
 import "./app.css";
+import "./style.css";
 
 // https://api.github.com/users/leo-mahesh
 
@@ -56,6 +57,9 @@ export default class App extends Component {
           <div className="main-container">
             <img className="avatar" src={this.state.avatar_url} alt="avatar" />
             <section className="info">
+              <div id="stars"></div>
+              <div id="star2"></div>
+              <div id="star3"></div>
               <h1>UserName : {this.state.login}</h1>
               <h1 className="name">Name :{this.state.name}</h1>
 

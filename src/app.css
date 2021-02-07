@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,6 +37,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: black;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -140,6 +145,7 @@
 .container .main-container .info h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  color: #fff;
   padding: 10px;
 }
 
@@ -188,6 +194,7 @@
 .container .main-container .info p {
   padding: 10px;
   max-width: 300px;
+  color: #fff;
 }
 
 .container .main-container .info .Follow {
