@@ -31,7 +31,9 @@ html {
 
   .form {
     width: 100%;
-    background-color: rgb(228, 228, 228);
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    min-height: 250px;
+    box-shadow: 0 0 10px #13131363;
 
     .form-container {
       display: flex;
@@ -44,20 +46,34 @@ html {
       margin-right: auto;
 
       .input {
+        outline: none;
         padding: 5px;
         margin: 30px;
         width: 30vw;
         border: none;
         border-radius: 10px;
+        box-shadow: 0 0 10px #ffffff36;
+      }
+
+      input[type="text"] {
+        padding: 12px 20px;
+        font-size: 1rem;
       }
 
       .sbtn {
         color: #fff;
-        padding: 5px 20px;
+        padding: 12px 20px;
         border: none;
         background-color: rgb(112, 112, 112);
         border-radius: 10px;
         cursor: pointer;
+        transition: all 0.5s ease-out;
+        box-shadow: 0 0 10px #ffffff1c;
+        outline: none;
+
+        &:hover {
+          background-color: rgb(255, 132, 132);
+        }
       }
     }
   }
@@ -79,6 +95,7 @@ html {
       margin: 20px;
       margin-left: auto;
       margin-right: auto;
+      z-index: 99;
     }
 
     .info {

@@ -48,7 +48,10 @@ html {
 
 .container .form {
   width: 100%;
-  background-color: #e4e4e4;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  min-height: 250px;
+  -webkit-box-shadow: 0 0 10px #13131363;
+          box-shadow: 0 0 10px #13131363;
 }
 
 .container .form .form-container {
@@ -72,20 +75,37 @@ html {
 }
 
 .container .form .form-container .input {
+  outline: none;
   padding: 5px;
   margin: 30px;
   width: 30vw;
   border: none;
   border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px #ffffff36;
+          box-shadow: 0 0 10px #ffffff36;
+}
+
+.container .form .form-container input[type="text"] {
+  padding: 12px 20px;
+  font-size: 1rem;
 }
 
 .container .form .form-container .sbtn {
   color: #fff;
-  padding: 5px 20px;
+  padding: 12px 20px;
   border: none;
   background-color: #707070;
   border-radius: 10px;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  -webkit-box-shadow: 0 0 10px #ffffff1c;
+          box-shadow: 0 0 10px #ffffff1c;
+  outline: none;
+}
+
+.container .form .form-container .sbtn:hover {
+  background-color: #ff8484;
 }
 
 .container .main-container {
@@ -118,6 +138,7 @@ html {
   margin: 20px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 99;
 }
 
 .container .main-container .info {
